@@ -21,7 +21,7 @@ jobs:
         with:
           groq_api_key: ${{ secrets.GROQKEY }}
           custom_prompt: |
-            You are reviewing C++ code. Focus on:
+            You are reviewing C++ code. Respond with a valid json object. Focus on:
             - Memory safety (leaks, dangling pointers, RAII)
             - Undefined behavior (signed overflow, strict aliasing)
             - Modern C++ best practices (smart pointers, move semantics, constexpr)
