@@ -122,4 +122,73 @@ int main(){
 
 }
 
+// 8. Calculate the area of a circle using a constant PI.
+#include <iostream>
+using namespace std;
 
+double area_of_circle(double r){
+    const double PI = 3.142;
+    return PI * r * r;
+}
+
+int main(){
+    double r;
+    cout << "Enter a number: ";
+    cin >> r;
+    cout << "Area is: " << area_of_circle(r) << endl;
+    return 0;
+}
+
+// 8. Create a function that returns the larger of two numbers.
+#include <iostream>
+using namespace std;
+
+int comparision(int x, int y){
+    if (x > y){
+        return x;
+    }
+    return y;
+}
+
+int main(){
+    int x = 54;
+    int y = 2345;
+    cout << "The greator number is: " << comparision(x, y) << endl;
+    return 0;
+}
+
+
+// 9. Create a function that returns the smaller  of two numbers.
+#include <iostream>
+using namespace std;
+
+int comparision_less(int x, int y){
+    if (x < y){
+        return x;
+    }
+    return y;
+}
+
+int main(){
+    int x = 54;
+    int y = 2345;
+    cout << "The lessor number is: " << comparision_less(x, y) << endl;
+    return 0;
+}
+
+// 10. Ask for the radius of a sphere and calculate its volume.
+#include <iostream>
+using namespace std;
+
+double volume(int r){
+    const double PI = 3.142;
+    return (PI * r * r * r * 4)/ 3;
+}
+
+int main(){
+    int r;
+    cout <<"Enter radius of a sphere: " << endl;
+    cin >> r;
+    cout << "The volume of the sphere is: " << volume(r) << endl;
+    return 0;
+}
