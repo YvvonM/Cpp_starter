@@ -7,10 +7,7 @@ class Buffer {
 public:
     Buffer(size_t size) : data_(new char[size]), size_(size) {}
     
-    char* get() { return data_; }
-    
-    // Missing destructor, copy constructor, copy assignment
-    // Rule of Three violation
+    char* get() { return dat
     
 private:
     char* data_;
