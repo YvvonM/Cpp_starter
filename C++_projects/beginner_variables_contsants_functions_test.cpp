@@ -1,16 +1,24 @@
-//Ask for the radius of a sphere and calculate its volume.
+/*
+Write a function that returns the average speed.
+speed = distance / time
+
+*/
 #include <iostream>
 using namespace std;
 
-double volume(int r){
-    const double PI = 3.142;
-    return (PI * r * r * r * 4)/ 3;
+string swap(double number_1, double number_2){
+    double temp = number_1;
+    number_1 = number_2;
+    number_2 = temp;
+    string output = "number 1 is: " + to_string(number_1) + " and the value of number 2 is: " + to_string(number_2);
+
+    return output;
 }
 
 int main(){
-    int r;
-    cout <<"Enter radius of a sphere: " << endl;
-    cin >> r;
-    cout << "The volume of the sphere is: " << volume(r) << endl;
+    double number_1 = 125;
+    double number_2 = 234;
+    cout << swap(number_1, number_2) << endl;
     return 0;
+
 }
