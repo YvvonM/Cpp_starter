@@ -489,3 +489,87 @@ int main(){
     return 0;
 
 }
+
+/* 27.
+Write a function that returns the average speed.
+speed = distance / time
+
+*/
+#include <iostream>
+using namespace std;
+
+double speed(double distance, int time){
+    return distance/time;
+}
+
+int main(){
+    int time = 7;
+    double distance = 567;
+    cout <<"The speed is: " << speed(distance, time) << endl;
+    return 0;
+
+}
+
+/* 28.
+Build a calculator that has four separate functions:
+add()
+subtract()
+multiply()
+divide()
+*/
+#include <iostream>
+using namespace std;
+
+double add(double number_1, int number_2){
+    return number_1 + number_2;
+}
+double subtract(double number_1, int number_2){
+    return number_1 - number_2;
+}
+double multiply(double number_1, int number_2){
+    return number_1 * number_2;
+}
+double divide(double number_1, int number_2){
+    return number_1 / number_2;
+}
+
+int main(){
+    double number_1, number_2;
+    string operation;
+    cout << "Enter first number: " << endl;
+    cin >> number_1;
+
+    cout << "Enter an operator (+, -, *, /): " << endl;
+    cin >> operation;
+
+    cout << "Enter second number: " << endl;
+    cin >> number_2;
+
+    if (operation == "+"){
+        cout << "Answer = "  << add(number_1, number_2);
+    }
+    else if (operation == "-"){
+        cout << "Answer = " << subtract(number_1, number_2);
+    }
+    else if (operation == "*"){
+        cout << "Answer = "  << multiply(number_1, number_2);
+    }
+    else if (operation == "/"){
+        if (number_2 == 0)
+        {
+            cout << "Error! Cannot divide by zero.";
+        }
+        else
+        {
+            cout << "Answer = " << divide(number_1, number_2);
+        }
+    }
+    else{
+        cout << "Invalid operator";
+    }
+
+
+    return 0;
+
+}
+
