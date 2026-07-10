@@ -2,11 +2,11 @@
 
 A beginner-friendly C++ learning repository with example projects and exercises.
 
-## 📋 Overview
+## Overview
 
 This repository serves as a starter guide for learning C++ programming. It includes practical examples and exercises covering fundamental concepts like variables, constants, functions, and basic projects to help you build a strong foundation in C++.
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 Cpp_starter/
@@ -22,7 +22,7 @@ Cpp_starter/
 └── README.md               # This file
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -55,7 +55,7 @@ If you're using Visual Studio Code:
 2. Use the built-in tasks (press `Ctrl+Shift+B` or `Cmd+Shift+B`)
 3. Select the compilation task from `tasks.json`
 
-## 📚 Projects & Exercises
+##  Projects & Exercises
 
 ### 1. **Hello World** (`helloworld.cpp`)
    - The classic first C++ program
@@ -74,7 +74,7 @@ If you're using Visual Studio Code:
    - Best practices and common patterns
    - Study guide for understanding concepts
 
-## 💡 Topics Covered
+##  Topics Covered
 
 - ✅ Variables and data types
 - ✅ Constants
@@ -82,7 +82,7 @@ If you're using Visual Studio Code:
 - ✅ Input/Output operations
 - ✅ Basic control flow
 
-## 🔧 Development Environment
+##  Development Environment
 
 This repository includes configuration for:
 
@@ -90,7 +90,7 @@ This repository includes configuration for:
 - **VS Code**: Pre-configured tasks for quick compilation
 - **GitHub Actions**: CI/CD workflows (if configured)
 
-## 📖 How to Use This Repository
+##  How to Use This Repository
 
 1. **Learn**: Start with `helloworld.cpp` to understand the basics
 2. **Practice**: Work through `beginner_variables_contsants_functions_test.cpp`
@@ -98,7 +98,7 @@ This repository includes configuration for:
 4. **Experiment**: Modify and extend the programs to deepen understanding
 5. **Build**: Create your own projects in the `C++_projects/` directory
 
-## 🎯 Learning Path
+##  Learning Path
 
 Recommended order for beginners:
 1. Run and understand `helloworld.cpp`
@@ -107,18 +107,18 @@ Recommended order for beginners:
 4. Modify existing programs to practice
 5. Create new programs combining what you've learned
 
-## 🤝 Contributing
+##  Contributing
 
 This is a personal learning repository, but feel free to:
 - Fork and adapt for your own learning
 - Report issues if you find any
 - Suggest improvements for clarity
 
-## 📝 License
+##  License
 
 This repository is provided as-is for educational purposes. No specific license is assigned.
 
-## 🆘 Troubleshooting
+##  Troubleshooting
 
 ### Compilation errors?
 - Ensure you have a C++ compiler installed
@@ -130,7 +130,7 @@ This repository is provided as-is for educational purposes. No specific license 
 - On Linux/Mac, use `./executable_name`
 - On Windows, use `executable_name.exe`
 
-## 📞 Questions?
+##  Questions?
 
 If you're stuck or have questions:
 - Review the reference solutions in `answers.cpp`
@@ -139,4 +139,4 @@ If you're stuck or have questions:
 
 ---
 
-**Happy Learning! 🎓**
+**Happy Learning! **
