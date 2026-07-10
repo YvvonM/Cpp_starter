@@ -76,11 +76,11 @@ If you're using Visual Studio Code:
 
 ##  Topics Covered
 
-- ✅ Variables and data types
-- ✅ Constants
-- ✅ Functions
-- ✅ Input/Output operations
-- ✅ Basic control flow
+- Variables and data types
+- Constants
+- Functions
+- Input/Output operations
+- Basic control flow
 
 ##  Development Environment
 
