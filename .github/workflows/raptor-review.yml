@@ -1,4 +1,3 @@
-# .github/workflows/raptor-review.yml
 name: RaptorReview AI
 
 on:
@@ -21,7 +20,7 @@ jobs:
         with:
           groq_api_key: ${{ secrets.GROQKEY }}
           custom_prompt: |
-            You are reviewing C++ code. Respond with a valid json object. Focus on:
+            You are reviewing C++ code. Focus on:
             - Memory safety (leaks, dangling pointers, RAII)
             - Undefined behavior (signed overflow, strict aliasing)
             - Modern C++ best practices (smart pointers, move semantics, constexpr)
@@ -29,3 +28,13 @@ jobs:
             - Performance pitfalls (unnecessary copies, virtual in hot paths)
             Be concise. Only comment on actual issues, not style nits.
 
+            Respond with ONLY a valid JSON array, no markdown, no freeform text.
+            Each element must use this exact schema:
+            {
+              "file": "path/to/file",
+              "line": 123,
+              "severity": "CRITICAL" | "WARNING" | "SUGGESTION",
+              "title": "short issue title",
+              "suggestion": "concrete fix",
+              "why": "impact explanation"
+            }
