@@ -19,21 +19,29 @@ jobs:
       - uses: dev-k99/raptorreview-ai@v1
         with:
           groq_api_key: ${{ secrets.GROQKEY }}
+          model: qwen/qwen3.6-27b
+          temperature: 0.1
+          max_tokens: 2048
           custom_prompt: |
-            You are reviewing C++ code. Focus on:
-            - Memory safety (leaks, dangling pointers, RAII)
-            - Undefined behavior (signed overflow, strict aliasing)
-            - Modern C++ best practices (smart pointers, move semantics, constexpr)
-            - Thread safety and data races
-            - Performance pitfalls (unnecessary copies, virtual in hot paths)
-            Be concise. Only comment on actual issues, not style nits.
+            You are reviewing Flutter/Dart code. Focus on:
+            - BuildContext used across async gaps (after await, mounted check missing)
+            - Memory leaks (StreamControllers, AnimationControllers, listeners not disposed)
+            - setState called after dispose or during build
+            - Widget keys misused or missing in lists
+            - const constructors missed (performance)
+            - Unnecessary widget rebuilds (ValueListenableBuilder vs setState, etc.)
+            - Incorrect use of StatelessWidget vs StatefulWidget
+            - Async operations inside build methods
+            - Null safety violations or unsafe casts
+            - Platform channel or plugin usage errors
+            Be concise. Only comment on actual bugs or performance issues, not style nits or formatting.
 
             Respond with ONLY a valid JSON object, no markdown, no freeform text, in this exact shape:
             {
               "summary": "one or two sentence overall assessment",
               "issues": [
                 {
-                  "file": "path/to/file",
+                  "file": "path/to/file.dart",
                   "line": 123,
                   "severity": "CRITICAL",
                   "title": "short issue title",
