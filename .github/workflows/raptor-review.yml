@@ -1,4 +1,4 @@
-name: RaptorReview AI
+name: RaptorReview AI 
 
 on:
   pull_request:
